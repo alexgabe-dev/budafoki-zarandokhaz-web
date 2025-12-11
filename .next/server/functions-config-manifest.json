@@ -1,8 +1,12 @@
 {
   "version": 1,
   "functions": {
-    "/api/news/[id]": {},
+    "/api/artworks": {},
+    "/api/artworks/[id]": {},
+    "/api/exhibitions/[id]": {},
     "/api/news": {},
+    "/api/exhibitions": {},
+    "/api/news/[id]": {},
     "/_middleware": {
       "runtime": "nodejs",
       "matchers": [

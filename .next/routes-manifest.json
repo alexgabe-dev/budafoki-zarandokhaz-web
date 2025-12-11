@@ -21,6 +21,22 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/api/artworks/[id]",
+      "regex": "^/api/artworks/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/artworks/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/exhibitions/[id]",
+      "regex": "^/api/exhibitions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/exhibitions/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/api/news/[id]",
       "regex": "^/api/news/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -57,6 +73,24 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/galeria",
+      "regex": "^/admin/galeria(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/galeria(?:/)?$"
+    },
+    {
+      "page": "/admin/gyujtemeny",
+      "regex": "^/admin/gyujtemeny(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/gyujtemeny(?:/)?$"
+    },
+    {
       "page": "/admin/hirek",
       "regex": "^/admin/hirek(?:/)?$",
       "routeKeys": {},
@@ -79,6 +113,18 @@
       "regex": "^/api/admin/logout(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/admin/logout(?:/)?$"
+    },
+    {
+      "page": "/api/artworks",
+      "regex": "^/api/artworks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/artworks(?:/)?$"
+    },
+    {
+      "page": "/api/exhibitions",
+      "regex": "^/api/exhibitions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/exhibitions(?:/)?$"
     },
     {
       "page": "/api/news",

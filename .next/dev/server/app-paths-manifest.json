@@ -1,9 +1,15 @@
 {
+  "/admin/galeria/page": "app/admin/galeria/page.js",
+  "/admin/gyujtemeny/page": "app/admin/gyujtemeny/page.js",
   "/admin/hirek/page": "app/admin/hirek/page.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/api/admin/logout/route": "app/api/admin/logout/route.js",
+  "/api/artworks/route": "app/api/artworks/route.js",
+  "/api/exhibitions/route": "app/api/exhibitions/route.js",
   "/api/news/route": "app/api/news/route.js",
   "/galeria/page": "app/galeria/page.js",
-  "/hirek/page": "app/hirek/page.js",
   "/kapcsolat/page": "app/kapcsolat/page.js",
-  "/page": "app/page.js",
-  "/szolgaltatasok/page": "app/szolgaltatasok/page.js"
+  "/page": "app/page.js"
 }

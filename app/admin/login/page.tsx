@@ -26,7 +26,7 @@ export default function AdminLoginPage() {
     })
     if (res.ok) {
       toast({ title: "Sikeres belépés" })
-      router.replace("/admin/hirek")
+      router.replace("/admin")
     } else {
       const msg = await res.text()
       setError(msg || "Hibás jelszó")

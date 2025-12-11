@@ -4,47 +4,35 @@ import { useRef, useEffect, useState } from "react"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Calendar, ArrowRight, MapPin } from "lucide-react"
 
-const exhibitions = [
-  {
-    id: 1,
-    title: "Fények és Árnyékok",
-    artist: "Kovács Anna",
-    description:
-      "Kortárs olajfestmények a fény és sötétség örök párbeszédéről. A kiállítás feltárja a kontrasztok erejét a modern művészetben.",
-    image: "/modern-oil-painting-light-shadow-abstract-art-gall.jpg",
-    dateRange: "2025. december 1. – 2025. január 15.",
-    location: "Főgaléria",
-    status: "current" as const,
-  },
-  {
-    id: 2,
-    title: "Borhegyek",
-    artist: "Molnár Péter",
-    description:
-      "Vízfestmények a magyar borvidékekről. A művész bejárta az ország leghíresebb szőlőhegyeit, hogy megörökítse azok szépségét.",
-    image: "/watercolor-painting-hungarian-vineyard-hills-lands.jpg",
-    dateRange: "2025. január 20. – február 28.",
-    location: "Kamarakiállító",
-    status: "upcoming" as const,
-  },
-  {
-    id: 3,
-    title: "Szentek és Bűnösök",
-    artist: "Vegyes művészek",
-    description:
-      "Csoportos kiállítás a hit és kételkedés témájában. Festmények, szobrok és installációk fiatal magyar alkotóktól.",
-    image: "/religious-art-modern-interpretation-saints-sinners.jpg",
-    dateRange: "2025. március 1. – április 30.",
-    location: "Főgaléria",
-    status: "upcoming" as const,
-  },
-]
+type ExhibitionDetail = {
+  paintedWhen: string
+  paintedWhere: string
+  technique: string
+  dimensions: string
+  curatorNote: string
+}
+type Exhibition = {
+  id: number
+  slug: string
+  title: string
+  artist: string
+  description: string
+  image: string
+  dateRange: string
+  location: string
+  status: "current" | "upcoming"
+  details?: ExhibitionDetail
+}
 
 export function GalleryExhibitions() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
+  const [open, setOpen] = useState(false)
+  const [selected, setSelected] = useState<Exhibition | null>(null)
+  const [items, setItems] = useState<Exhibition[]>([])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,6 +52,13 @@ export function GalleryExhibitions() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    fetch("/api/exhibitions")
+      .then((r) => r.json())
+      .then((data: Exhibition[]) => setItems(data))
+      .catch(() => {})
+  }, [])
+
   return (
     <section ref={sectionRef} className="py-20 md:py-32 bg-card">
       <div className="container mx-auto px-4">
@@ -80,7 +75,7 @@ export function GalleryExhibitions() {
 
         {/* Exhibition Cards */}
         <div className="space-y-8">
-          {exhibitions.map((exhibition, index) => (
+          {items.map((exhibition, index) => (
             <Card
               key={exhibition.id}
               className={`bg-background border-border overflow-hidden group hover-lift ${
@@ -133,6 +128,10 @@ export function GalleryExhibitions() {
                   <Button
                     variant="outline"
                     className="w-fit border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground bg-transparent group/btn"
+                    onClick={() => {
+                      setSelected(exhibition)
+                      setOpen(true)
+                    }}
                   >
                     Részletek megtekintése
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
@@ -142,6 +141,44 @@ export function GalleryExhibitions() {
             </Card>
           ))}
         </div>
+
+        <Dialog open={open} onOpenChange={(o) => { setOpen(o); if (!o) setSelected(null) }}>
+          <DialogContent className="sm:max-w-3xl">
+            {selected && (
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-md">
+                  <Image src={selected.image || "/placeholder.svg"} alt={selected.title} fill className="object-cover" />
+                </div>
+                <div>
+                  <DialogHeader>
+                    <DialogTitle className="font-serif text-2xl font-bold text-foreground">{selected.title}</DialogTitle>
+                    <DialogDescription className="text-primary font-medium">{selected.artist}</DialogDescription>
+                  </DialogHeader>
+                  <p className="text-muted-foreground leading-relaxed mt-4">{selected.description}</p>
+                  <div className="mt-4 text-sm text-muted-foreground space-y-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4 text-secondary" />
+                      <span>{selected.dateRange}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-secondary" />
+                      <span>{selected.location}</span>
+                    </div>
+                    {selected.details && (
+                      <div className="mt-4 space-y-1">
+                        <div><span className="font-medium text-foreground">Mikor készült:</span> {selected.details.paintedWhen}</div>
+                        <div><span className="font-medium text-foreground">Hol készült:</span> {selected.details.paintedWhere}</div>
+                        <div><span className="font-medium text-foreground">Technika:</span> {selected.details.technique}</div>
+                        <div><span className="font-medium text-foreground">Méret:</span> {selected.details.dimensions}</div>
+                        <div className="pt-2 text-foreground/80">{selected.details.curatorNote}</div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   )
