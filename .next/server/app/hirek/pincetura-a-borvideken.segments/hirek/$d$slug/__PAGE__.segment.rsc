@@ -1,60 +1,140 @@
 1:"$Sreact.fragment"
-2:I[5477,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"Header"]
-3:I[23910,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"ArticleHeader"]
-5:I[22771,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"ArticleContent"]
-e:I[95093,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"RelatedArticles"]
-f:I[92803,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],""]
-10:I[36858,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"Image"]
-17:I[29665,["/_next/static/chunks/25858eef7c24279e.js","/_next/static/chunks/f339627a17c64665.js","/_next/static/chunks/e9e5005a548062ea.js","/_next/static/chunks/4bf7e38dede70e2c.js"],"BackToTop"]
-18:I[90006,["/_next/static/chunks/6891a82b68c814ca.js","/_next/static/chunks/044e8bc478e6a8d7.js"],"OutletBoundary"]
+2:I[13293,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"Header"]
+3:I[46318,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"ArticleHeader"]
+5:I[24806,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"ArticleContent"]
+e:I[9482,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"RelatedArticles"]
+f:I[22016,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],""]
+10:I[5500,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"Image"]
+17:I[18191,["/_next/static/chunks/1d89ed972a208c42.js","/_next/static/chunks/86b413979010ad5b.js","/_next/static/chunks/977d5da6d23eabdb.js","/_next/static/chunks/9cc5753c137859da.js"],"BackToTop"]
+18:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 19:"$Sreact.suspense"
-4:T4fd,
+4:T654,<h1>Budafoki Pincetúra és Borkóstoló</h1>
 
-      <p>A Budafoki borvidék Magyarország egyik legrégebbi és legjelentősebb bortermelő területe. Most lehetőséged nyílik felfedezni a föld alatti pincerendszert és megkóstolni a régió legjobb borait.</p>
-      
-      <h2>A Túra Programja</h2>
-      
-      <p>A pincetúra minden hónap első szombatján indul a Zarándokháztól 14:00-kor. A mintegy 3 órás program során 3 pincét látogatunk meg, mindegyikben 3-4 bort kóstolunk.</p>
-      
-      <h2>Mit Láthatsz?</h2>
-      
-      <p>A Budafoki pincerendszer évszázados története során több mint 100 kilométernyi járatot vágtak a mészkőbe. Némelyik pince a török időkből származik! A túra során betekintést nyersz a hagyományos borászati módszerekbe és a modern technológiákba egyaránt.</p>
-      
-      <blockquote>"A budafoki pincék nem csak a borok otthona, hanem Budapest rejtett kincsei is." - Szabó János, borszakértő</blockquote>
-      
-      <h2>Részvételi Díj</h2>
-      
-      <p>A túra ára 12.000 Ft/fő, amely tartalmazza a vezetést, a borkóstolót (10-12 bor) és egy kis hideg tálat. A Zarándokház vendégeinek 15% kedvezmény!</p>
-      
-      <p>Jelentkezés a recepción vagy online. Minimum létszám: 6 fő, maximum: 15 fő.</p>
-    
-    6:T4fd,
+<p>
+Fedezd fel Magyarország egyik legrégebbi borvidékének föld alatti pincerendszerét, 
+és kóstold meg a régió legkiválóbb borait!
+</p>
 
-      <p>A Budafoki borvidék Magyarország egyik legrégebbi és legjelentősebb bortermelő területe. Most lehetőséged nyílik felfedezni a föld alatti pincerendszert és megkóstolni a régió legjobb borait.</p>
-      
-      <h2>A Túra Programja</h2>
-      
-      <p>A pincetúra minden hónap első szombatján indul a Zarándokháztól 14:00-kor. A mintegy 3 órás program során 3 pincét látogatunk meg, mindegyikben 3-4 bort kóstolunk.</p>
-      
-      <h2>Mit Láthatsz?</h2>
-      
-      <p>A Budafoki pincerendszer évszázados története során több mint 100 kilométernyi járatot vágtak a mészkőbe. Némelyik pince a török időkből származik! A túra során betekintést nyersz a hagyományos borászati módszerekbe és a modern technológiákba egyaránt.</p>
-      
-      <blockquote>"A budafoki pincék nem csak a borok otthona, hanem Budapest rejtett kincsei is." - Szabó János, borszakértő</blockquote>
-      
-      <h2>Részvételi Díj</h2>
-      
-      <p>A túra ára 12.000 Ft/fő, amely tartalmazza a vezetést, a borkóstolót (10-12 bor) és egy kis hideg tálat. A Zarándokház vendégeinek 15% kedvezmény!</p>
-      
-      <p>Jelentkezés a recepción vagy online. Minimum létszám: 6 fő, maximum: 15 fő.</p>
-    
-    0:{"buildId":"_l3gP4lpenRMKjUd_ZdaL","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-background pt-20","children":[["$","$L2",null,{}],["$","$L3",null,{"article":{"id":4,"slug":"pincetura-a-borvideken","title":"Pincetúra a borvidéken","excerpt":"Csatlakozz exkluzív pincetúránkhoz! Fedezd fel a Budafoki borvidék rejtett kincseit szakértő vezetéssel.","content":"$4","date":"2025. november 20.","readTime":"4 perc","image":"/wine-cellar-tour-barrels-candlelight-dark-moody.jpg","category":"Kirándulás","author":"Szabó János","authorImage":"/hungarian-wine-expert-man-portrait.jpg"}}],["$","$L5",null,{"article":{"id":4,"slug":"pincetura-a-borvideken","title":"Pincetúra a borvidéken","excerpt":"Csatlakozz exkluzív pincetúránkhoz! Fedezd fel a Budafoki borvidék rejtett kincseit szakértő vezetéssel.","content":"$6","date":"2025. november 20.","readTime":"4 perc","image":"/wine-cellar-tour-barrels-candlelight-dark-moody.jpg","category":"Kirándulás","author":"Szabó János","authorImage":"/hungarian-wine-expert-man-portrait.jpg"}}],"$L7","$L8","$L9"]}],["$La","$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+<hr>
+
+<h2>A Túra Programja</h2>
+
+<p>
+A pincetúra <strong>minden hónap első szombatján</strong> indul a 
+<strong>Zarándokháztól 14:00-kor</strong>.  
+A körülbelül <strong>3 órás program</strong> során összesen <strong>3 pincét</strong> látogatunk meg, 
+mindegyik helyszínen pedig <strong>3–4 bor</strong> kóstolása vár rád.
+</p>
+
+<hr>
+
+<h2>Mit Láthatsz?</h2>
+
+<p>
+A Budafoki pincerendszer évszázados története során több mint 
+<strong>100 km hosszú</strong> járatot vájtak a mészkőbe.  
+Egyes pincék akár a <strong>török korból</strong> is származhatnak!
+</p>
+
+<ul>
+  <li>Föld alatti mészkőjáratok</li>
+  <li>Hagyományos borászati eszközök</li>
+  <li>Modern technológiai megoldások</li>
+  <li>Különleges budafoki borok</li>
+</ul>
+
+<blockquote>
+  “A budafoki pincék nem csak a borok otthona, hanem Budapest rejtett kincsei is.”  
+  <br><em>– Szabó János, borszakértő</em>
+</blockquote>
+
+<hr>
+
+<h2>Részvételi Díj</h2>
+
+<p>
+A túra ára: <strong>12.000 Ft/fő</strong>, amely tartalmazza:
+</p>
+
+<ul>
+  <li>szakvezetés a pincékben</li>
+  <li><strong>10–12 féle</strong> borkóstoló</li>
+  <li>egy kis <strong>hideg tál</strong></li>
+</ul>
+
+<p><strong>Zarándokház vendégeinek: 15% kedvezmény!</strong></p>
+
+<p>
+Jelentkezés a recepción vagy online.  
+<br><strong>Minimum létszám:</strong> 6 fő  
+<br><strong>Maximum létszám:</strong> 15 fő
+</p>6:T654,<h1>Budafoki Pincetúra és Borkóstoló</h1>
+
+<p>
+Fedezd fel Magyarország egyik legrégebbi borvidékének föld alatti pincerendszerét, 
+és kóstold meg a régió legkiválóbb borait!
+</p>
+
+<hr>
+
+<h2>A Túra Programja</h2>
+
+<p>
+A pincetúra <strong>minden hónap első szombatján</strong> indul a 
+<strong>Zarándokháztól 14:00-kor</strong>.  
+A körülbelül <strong>3 órás program</strong> során összesen <strong>3 pincét</strong> látogatunk meg, 
+mindegyik helyszínen pedig <strong>3–4 bor</strong> kóstolása vár rád.
+</p>
+
+<hr>
+
+<h2>Mit Láthatsz?</h2>
+
+<p>
+A Budafoki pincerendszer évszázados története során több mint 
+<strong>100 km hosszú</strong> járatot vájtak a mészkőbe.  
+Egyes pincék akár a <strong>török korból</strong> is származhatnak!
+</p>
+
+<ul>
+  <li>Föld alatti mészkőjáratok</li>
+  <li>Hagyományos borászati eszközök</li>
+  <li>Modern technológiai megoldások</li>
+  <li>Különleges budafoki borok</li>
+</ul>
+
+<blockquote>
+  “A budafoki pincék nem csak a borok otthona, hanem Budapest rejtett kincsei is.”  
+  <br><em>– Szabó János, borszakértő</em>
+</blockquote>
+
+<hr>
+
+<h2>Részvételi Díj</h2>
+
+<p>
+A túra ára: <strong>12.000 Ft/fő</strong>, amely tartalmazza:
+</p>
+
+<ul>
+  <li>szakvezetés a pincékben</li>
+  <li><strong>10–12 féle</strong> borkóstoló</li>
+  <li>egy kis <strong>hideg tál</strong></li>
+</ul>
+
+<p><strong>Zarándokház vendégeinek: 15% kedvezmény!</strong></p>
+
+<p>
+Jelentkezés a recepción vagy online.  
+<br><strong>Minimum létszám:</strong> 6 fő  
+<br><strong>Maximum létszám:</strong> 15 fő
+</p>0:{"buildId":"QpYCbarUm09uhHuQ-ZVfR","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-background pt-20","children":[["$","$L2",null,{}],["$","$L3",null,{"article":{"id":4,"slug":"pincetura-a-borvideken","title":"Pincetúra a borvidéken","excerpt":"Csatlakozz exkluzív pincetúránkhoz! Fedezd fel a Budafoki borvidék rejtett kincseit szakértő vezetéssel.","content":"$4","date":"2025. november 20.","readTime":"4 perc","image":"/wine-cellar-tour-barrels-candlelight-dark-moody.jpg","category":"Kirándulás","featured":true,"author":"Szabó János","authorImage":"/hungarian-wine-expert-man-portrait.jpg"}}],["$","$L5",null,{"article":{"id":4,"slug":"pincetura-a-borvideken","title":"Pincetúra a borvidéken","excerpt":"Csatlakozz exkluzív pincetúránkhoz! Fedezd fel a Budafoki borvidék rejtett kincseit szakértő vezetéssel.","content":"$6","date":"2025. november 20.","readTime":"4 perc","image":"/wine-cellar-tour-barrels-candlelight-dark-moody.jpg","category":"Kirándulás","featured":true,"author":"Szabó János","authorImage":"/hungarian-wine-expert-man-portrait.jpg"}}],"$L7","$L8","$L9"]}],["$La","$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
 7:["$","$Le",null,{"currentSlug":"pincetura-a-borvideken"}]
 8:["$","footer",null,{"className":"bg-background border-t border-border py-12 pb-28 md:pb-12","children":["$","div",null,{"className":"container mx-auto px-4","children":[["$","div",null,{"className":"grid md:grid-cols-3 gap-8 mb-8","children":[["$","div",null,{"children":[["$","$Lf",null,{"href":"/","className":"flex items-center gap-3 mb-4 group","children":[["$","$L10",null,{"src":"/logo/bfhz-logo-w.png","alt":"Budafoki Zarándokház","width":220,"height":60,"sizes":"(max-width: 640px) 140px, (max-width: 768px) 160px, 200px","className":"h-8 md:h-10 w-auto","priority":true}],["$","span",null,{"className":"font-serif text-xl font-bold text-foreground","children":["Budafoki ",["$","span",null,{"className":"text-primary","children":"Zarándokház"}]]}]]}],["$","p",null,{"className":"text-muted-foreground text-sm leading-relaxed mb-4","children":"Ahol a hit és a ház bora közös misére gyűlnek. Bár, étterem, szálláshely és rendezvényhelyszín Budafokon."}],["$","div",null,{"className":"flex items-center gap-3","children":[["$","a",null,{"href":"https://instagram.com","target":"_blank","rel":"noopener noreferrer","className":"p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300","aria-label":"Instagram","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-instagram h-5 w-5","children":[["$","rect","2e1cvw",{"width":"20","height":"20","x":"2","y":"2","rx":"5","ry":"5"}],["$","path","9exkf1",{"d":"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"}],["$","line","r4j83e",{"x1":"17.5","x2":"17.51","y1":"6.5","y2":"6.5"}],"$undefined"]}]}],["$","a",null,{"href":"https://facebook.com","target":"_blank","rel":"noopener noreferrer","className":"p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300","aria-label":"Facebook","children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-facebook h-5 w-5","children":[["$","path","1jg4f8",{"d":"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"}],"$undefined"]}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-serif font-bold text-foreground mb-4","children":"Navigáció"}],["$","nav",null,{"className":"grid grid-cols-2 gap-2","children":[["$","$Lf","/",{"href":"/","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Főoldal"}],["$","$Lf","/rolunk",{"href":"/rolunk","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Rólunk"}],["$","$Lf","/szolgaltatasok",{"href":"/szolgaltatasok","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Szolgáltatások"}],["$","$Lf","/galeria",{"href":"/galeria","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Galéria"}],["$","$Lf","/hirek",{"href":"/hirek","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Hírek"}],["$","$Lf","/kapcsolat",{"href":"/kapcsolat","className":"text-sm text-muted-foreground hover:text-foreground transition-colors duration-300","children":"Kapcsolat"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"font-serif font-bold text-foreground mb-4","children":"Elérhetőségek"}],["$","div",null,{"className":"space-y-3","children":[["$","div","1222 Budapest, Zarándok utca 42.",{"className":"flex items-start gap-3 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-map-pin h-4 w-4 text-primary flex-shrink-0 mt-0.5","children":[["$","path","1r0f0z",{"d":"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"}],"$L11","$undefined"]}],"$L12"]}],"$L13","$L14"]}],"$L15"]}]]}],"$L16"]}]}]
 9:["$","$L17",null,{}]
-a:["$","script","script-0",{"src":"/_next/static/chunks/f339627a17c64665.js","async":true}]
-b:["$","script","script-1",{"src":"/_next/static/chunks/e9e5005a548062ea.js","async":true}]
-c:["$","script","script-2",{"src":"/_next/static/chunks/4bf7e38dede70e2c.js","async":true}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/86b413979010ad5b.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/977d5da6d23eabdb.js","async":true}]
+c:["$","script","script-2",{"src":"/_next/static/chunks/9cc5753c137859da.js","async":true}]
 d:["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]
 11:["$","circle","ilqhr7",{"cx":"12","cy":"10","r":"3"}]
 12:["$","span",null,{"children":"1222 Budapest, Zarándok utca 42."}]

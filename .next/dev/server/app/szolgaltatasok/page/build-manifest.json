@@ -2,20 +2,20 @@
   "devFiles": [],
   "ampDevFiles": [],
   "polyfillFiles": [
-    "static/chunks/be282_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_5f6c7191._.js",
-    "static/chunks/be282_next_dist_compiled_react-dom_0426a076._.js",
-    "static/chunks/be282_next_dist_compiled_react-server-dom-turbopack_6bd27bdf._.js",
-    "static/chunks/be282_next_dist_compiled_next-devtools_index_9cdb7cff.js",
-    "static/chunks/be282_next_dist_compiled_1ff0ca66._.js",
-    "static/chunks/be282_next_dist_client_a891252a._.js",
-    "static/chunks/be282_next_dist_6b7641d0._.js",
-    "static/chunks/be282_@swc_helpers_cjs_9d225a18._.js",
-    "static/chunks/Documents_git_budafoki-zarandokhaz-web_a0ff3932._.js",
-    "static/chunks/turbopack-Documents_git_budafoki-zarandokhaz-web_701249cd._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_bae88007._.js",
+    "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
+    "static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_9212ccad._.js",
+    "static/chunks/node_modules_next_dist_compiled_next-devtools_index_1dd7fb59.js",
+    "static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js",
+    "static/chunks/node_modules_next_dist_client_aaee43fe._.js",
+    "static/chunks/node_modules_next_dist_7a8122d0._.js",
+    "static/chunks/node_modules_@swc_helpers_cjs_d80fb378._.js",
+    "static/chunks/_a0ff3932._.js",
+    "static/chunks/turbopack-_45210fd5._.js"
   ],
   "pages": {},
   "ampFirstPages": []

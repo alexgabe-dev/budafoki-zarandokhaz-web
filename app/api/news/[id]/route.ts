@@ -2,7 +2,28 @@ import { NextRequest } from "next/server"
 import fs from "node:fs"
 import path from "node:path"
 
-import { allNews } from "@/lib/news-data"
+const NEWS_PATH = path.join(process.cwd(), "lib", "news-data.tsx")
+export const runtime = "nodejs"
+export const dynamic = "force-dynamic"
+
+function loadArticles(): NewsArticle[] {
+  try {
+    const src = fs.readFileSync(NEWS_PATH, "utf8")
+    const start = src.indexOf("export const allNews")
+    if (start === -1) return []
+    const bracketStart = src.indexOf("[", start)
+    const sentinel = "]\n\nexport function getNewsArticle"
+    const endIdx = src.indexOf(sentinel, bracketStart)
+    if (bracketStart === -1 || endIdx === -1) return []
+    const arrayStr = src.slice(bracketStart, endIdx)
+    // eslint-disable-next-line no-new-func
+    const fn = new Function("return " + arrayStr)
+    const arr = fn()
+    return Array.isArray(arr) ? (arr as NewsArticle[]) : []
+  } catch {
+    return []
+  }
+}
 import type { NewsArticle } from "@/lib/news-data"
 
 function buildNewsFileContent(articles: NewsArticle[]): string {
@@ -41,9 +62,17 @@ export async function PUT(
   const idParam = p?.id
   const maybeId = Number(idParam)
   const body = await req.json()
-  const newsPath = path.join(process.cwd(), "lib", "news-data.tsx")
+  const newsPath = NEWS_PATH
 
-  const articles = allNews.slice()
+  let articles = loadArticles().slice()
+  if (!articles.length) {
+    try {
+      const mod = await import("@/lib/news-data")
+      articles = (mod.allNews ?? []).slice()
+    } catch {
+      articles = []
+    }
+  }
   let idx = !Number.isNaN(maybeId) ? articles.findIndex((a) => a.id === maybeId) : -1
   if (idx === -1 && body?.slug) {
     idx = articles.findIndex((a) => a.slug === String(body.slug))
@@ -56,6 +85,16 @@ export async function PUT(
   updated.author = body.author ?? ""
   updated.authorImage = body.authorImage ?? ""
   updated.content = normalizeContent(String(updated.content || ""))
+  if (updated.featured) {
+    for (let i = 0; i < articles.length; i++) {
+      if (i !== idx) {
+        const a = articles[i] as NewsArticle
+        if (a.featured) {
+          articles[i] = { ...a, featured: false }
+        }
+      }
+    }
+  }
   articles[idx] = updated as NewsArticle
 
   const content = buildNewsFileContent(articles)
@@ -72,9 +111,17 @@ export async function DELETE(
   const p: any = await (context as any).params
   const idParam = p?.id
   const maybeId = Number(idParam)
-  const newsPath = path.join(process.cwd(), "lib", "news-data.tsx")
+  const newsPath = NEWS_PATH
 
-  let articles = allNews.slice()
+  let articles = loadArticles().slice()
+  if (!articles.length) {
+    try {
+      const mod = await import("@/lib/news-data")
+      articles = (mod.allNews ?? []).slice()
+    } catch {
+      articles = []
+    }
+  }
   if (!Number.isNaN(maybeId)) {
     articles = articles.filter((a) => a.id !== maybeId)
   } else if (typeof idParam === "string") {

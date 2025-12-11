@@ -2,7 +2,30 @@ import { NextRequest } from "next/server"
 import fs from "node:fs"
 import path from "node:path"
 
-import { allNews } from "@/lib/news-data"
+const NEWS_PATH = path.join(process.cwd(), "lib", "news-data.tsx")
+export const runtime = "nodejs"
+export const dynamic = "force-dynamic"
+
+function loadArticles(): any[] {
+  try {
+    const src = fs.readFileSync(NEWS_PATH, "utf8")
+    const start = src.indexOf("export const allNews")
+    if (start === -1) return []
+    const bracketStart = src.indexOf("[", start)
+    const sentinel = "]\n\nexport function getNewsArticle"
+    const endIdx = src.indexOf(sentinel, bracketStart)
+    if (bracketStart === -1 || endIdx === -1) return []
+    const arrayStr = src.slice(bracketStart, endIdx)
+    // Evaluate the JS array literal safely in a new Function
+    // The file is local and controlled; arrayStr is a pure literal
+    // eslint-disable-next-line no-new-func
+    const fn = new Function("return " + arrayStr)
+    const arr = fn()
+    return Array.isArray(arr) ? arr : []
+  } catch {
+    return []
+  }
+}
 
 function buildNewsFileContent(articles: any[]): string {
   const header = `export interface NewsArticle {\n  id: number\n  slug: string\n  title: string\n  excerpt: string\n  content: string\n  date: string\n  readTime: string\n  image: string\n  category: string\n  featured?: boolean\n  author: string\n  authorImage: string\n}\n\nexport const allNews: NewsArticle[] = [\n`
@@ -24,16 +47,33 @@ function slugify(input: string): string {
 }
 
 export async function GET() {
-  return Response.json(allNews)
+  const arr = loadArticles()
+  if (arr.length === 0) {
+    try {
+      const mod = await import("@/lib/news-data")
+      return Response.json(mod.allNews ?? [])
+    } catch {
+      return Response.json([])
+    }
+  }
+  return Response.json(arr)
 }
 
 export async function POST(req: NextRequest) {
   const isAdmin = req.cookies.get("admin")?.value === "1"
   if (!isAdmin) return new Response("Unauthorized", { status: 401 })
   const body = await req.json()
-  const newsPath = path.join(process.cwd(), "lib", "news-data.tsx")
+  const newsPath = NEWS_PATH
 
-  const articles = allNews.slice()
+  let articles = loadArticles().slice()
+  if (!articles.length) {
+    try {
+      const mod = await import("@/lib/news-data")
+      articles = (mod.allNews ?? []).slice()
+    } catch {
+      articles = []
+    }
+  }
   const nextId = articles.length ? Math.max(...articles.map((a) => a.id)) + 1 : 1
   const slug = body.slug ? String(body.slug) : slugify(String(body.title))
 
@@ -52,6 +92,14 @@ export async function POST(req: NextRequest) {
     authorImage: "",
   }
 
+  if (newArticle.featured) {
+    for (let i = 0; i < articles.length; i++) {
+      const a = articles[i]
+      if (a.featured) {
+        articles[i] = { ...a, featured: false }
+      }
+    }
+  }
   articles.unshift(newArticle)
   const content = buildNewsFileContent(articles)
   fs.writeFileSync(newsPath, content, "utf8")

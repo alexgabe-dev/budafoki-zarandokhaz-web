@@ -7,12 +7,25 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { allNews } from "@/lib/news-data"
+
+type Article = {
+  id: number
+  slug: string
+  title: string
+  excerpt: string
+  content: string
+  date: string
+  readTime: string
+  image: string
+  category: string
+  featured?: boolean
+}
 
 export function NewsPreview() {
   const [isVisible, setIsVisible] = useState(false)
   const [hoveredId, setHoveredId] = useState<number | null>(null)
   const sectionRef = useRef<HTMLElement>(null)
+  const [newsItems, setNewsItems] = useState<Article[]>([])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,9 +45,14 @@ export function NewsPreview() {
     return () => observer.disconnect()
   }, [])
 
-  const newsItems = allNews.slice(0, 3)
+  useEffect(() => {
+    fetch("/api/news")
+      .then((r) => r.json())
+      .then((data: Article[]) => setNewsItems(data))
+      .catch(() => {})
+  }, [])
   const featuredNews = newsItems.find((item) => item.featured)
-  const otherNews = newsItems.filter((item) => !item.featured)
+  const otherNews = newsItems.filter((item) => !item.featured).slice(0, 3)
 
   return (
     <section ref={sectionRef} className="py-20 md:py-32 bg-card overflow-hidden">

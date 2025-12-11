@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/gbrs/Documents/git-projects/budafoki-zarandokhaz-web/proxy.ts"],"sourcesContent":["import { NextResponse } from \"next/server\"\nimport type { NextRequest } from \"next/server\"\n\nexport function proxy(req: NextRequest) {\n  const { pathname } = req.nextUrl\n\n  if (pathname.startsWith(\"/admin\") && pathname !== \"/admin/login\") {\n    const isAdmin = req.cookies.get(\"admin\")?.value === \"1\"\n    if (!isAdmin) {\n      const url = req.nextUrl.clone()\n      url.pathname = \"/admin/login\"\n      return NextResponse.redirect(url)\n    }\n  }\n\n  return NextResponse.next()\n}\n\nexport const config = {\n  matcher: [\"/admin/:path*\"],\n}\n"],"names":[],"mappings":";;;;;;AAAA;;AAGO,SAAS,MAAM,GAAgB;IACpC,MAAM,EAAE,QAAQ,EAAE,GAAG,IAAI,OAAO;IAEhC,IAAI,SAAS,UAAU,CAAC,aAAa,aAAa,gBAAgB;QAChE,MAAM,UAAU,IAAI,OAAO,CAAC,GAAG,CAAC,UAAU,UAAU;QACpD,IAAI,CAAC,SAAS;YACZ,MAAM,MAAM,IAAI,OAAO,CAAC,KAAK;YAC7B,IAAI,QAAQ,GAAG;YACf,OAAO,8IAAY,CAAC,QAAQ,CAAC;QAC/B;IACF;IAEA,OAAO,8IAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAgB;AAC5B"}}]
+}

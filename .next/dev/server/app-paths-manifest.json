@@ -1,8 +1,9 @@
 {
   "/admin/hirek/page": "app/admin/hirek/page.js",
-  "/admin/login/page": "app/admin/login/page.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js",
-  "/api/news/[id]/route": "app/api/news/[id]/route.js",
   "/api/news/route": "app/api/news/route.js",
-  "/hirek/page": "app/hirek/page.js"
+  "/galeria/page": "app/galeria/page.js",
+  "/hirek/page": "app/hirek/page.js",
+  "/kapcsolat/page": "app/kapcsolat/page.js",
+  "/page": "app/page.js",
+  "/szolgaltatasok/page": "app/szolgaltatasok/page.js"
 }

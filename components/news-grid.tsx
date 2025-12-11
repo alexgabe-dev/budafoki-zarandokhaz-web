@@ -6,7 +6,18 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { allNews } from "@/lib/news-data"
+type Article = {
+  id: number
+  slug: string
+  title: string
+  excerpt: string
+  content: string
+  date: string
+  readTime: string
+  image: string
+  category: string
+  featured?: boolean
+}
 
 const categories = ["Mind", "Esemény", "Gasztronómia", "Kultúra", "Akció", "Kirándulás", "Tanfolyam", "Üzleti"]
 
@@ -15,6 +26,7 @@ export function NewsGrid() {
   const [activeCategory, setActiveCategory] = useState("Mind")
   const [hoveredId, setHoveredId] = useState<number | null>(null)
   const sectionRef = useRef<HTMLElement>(null)
+  const [news, setNews] = useState<Article[]>([])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +46,13 @@ export function NewsGrid() {
     return () => observer.disconnect()
   }, [])
 
-  const filteredNews = activeCategory === "Mind" ? allNews : allNews.filter((news) => news.category === activeCategory)
+  useEffect(() => {
+    fetch("/api/news")
+      .then((r) => r.json())
+      .then((data: Article[]) => setNews(data))
+      .catch(() => {})
+  }, [])
+  const filteredNews = activeCategory === "Mind" ? news : news.filter((n) => n.category === activeCategory)
 
   const featuredNews = filteredNews.find((item) => item.featured)
   const regularNews = filteredNews.filter((item) => !item.featured)

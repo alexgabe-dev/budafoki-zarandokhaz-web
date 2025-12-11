@@ -91,7 +91,7 @@ export function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl hover:shadow-primary/25 bg-transparent group"
+              className="border-2 border-transparent ring-2 ring-primary bg-background/70 backdrop-blur-sm text-foreground hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl hover:shadow-primary/25 group"
             >
               <Link href="/kapcsolat">
                 <span className="relative">
