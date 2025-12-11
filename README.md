@@ -115,4 +115,6 @@ Modern, elegáns Next.js alapú weboldal a Budafoki Zarándokház számára. A p
 - `npm run start` — produkciós futtatás
 
 ## Licenc
-- A tartalmak és képek a Budafoki Zarándokház tulajdonát képezik. A kód felhasználása a szerző engedélyével.
+- A kód és tartalom szerzői jogi védelem alatt áll. Tulajdonos: Gábor Sándor (vizitor.hu).
+- Felhasználás kizárólag a tulajdonos előzetes írásbeli engedélyével.
+- Részletek: lásd `LICENSE` (angol nyelvű, proprietáris licenc).

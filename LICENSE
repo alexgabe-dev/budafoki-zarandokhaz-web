@@ -1,0 +1,88 @@
+SPDX-License-Identifier: LicenseRef-Vizitor-Proprietary-1.0
+
+Vizitor Proprietary License (VPL) v1.0
+
+Copyright (c) 2025 Gábor Sándor, vizitor.hu
+
+1. Definitions
+1.1 "Software" means the code, binaries, assets, images, fonts, configuration files, build artifacts, documentation, and any related materials contained in or derived from this repository.
+1.2 "Licensee" means the individual or entity who accesses or uses the Software.
+1.3 "Authorized Use" means any use explicitly permitted by a written license grant signed by the copyright holder.
+1.4 "Confidential Information" means non‑public information related to the Software, including source code and design documents.
+
+2. Grant of License
+2.1 The Software is proprietary. No rights are granted except as expressly stated in a separate written agreement.
+2.2 Absent a written license grant, the Licensee may view the Software solely for evaluation purposes and may not use it in production, publish, distribute, modify, or create derivative works.
+
+3. Permitted Uses (subject to written authorization only)
+3.1 Install, run, and use the Software in production.
+3.2 Modify source code and create derivative works.
+3.3 Distribute binaries or source code to third parties.
+3.4 Any permitted use under this section requires prior written authorization.
+
+4. Prohibited Uses (without written authorization)
+4.1 Copying, publishing, sublicensing, renting, leasing, or reselling the Software.
+4.2 Reverse engineering or attempting to extract source where not provided, except as required by law.
+4.3 Removing or altering copyright notices, trademarks, or attribution markers.
+4.4 Using the Software to train AI models or datasets, or to create substantially similar software.
+4.5 Using the Software in violation of applicable laws or third‑party rights.
+
+5. Ownership and Reservation of Rights
+5.1 The Software is owned by Gábor Sándor (vizitor.hu). All rights not expressly granted are reserved.
+5.2 No implied licenses are granted (including by estoppel or otherwise).
+
+6. Confidentiality
+6.1 The Licensee must protect the Confidential Information with reasonable care and may not disclose it to third parties without permission.
+
+7. Attribution
+7.1 If authorized to publish or deploy, the Licensee shall preserve copyright notices and, where reasonable, attribute ownership to "© Gábor Sándor, vizitor.hu".
+
+8. Term and Termination
+8.1 Any authorization may be terminated by written notice if the Licensee breaches this License.
+8.2 Upon termination, the Licensee must cease all use, destroy copies, and, if requested, certify destruction in writing.
+
+9. Warranty Disclaimer
+9.1 The Software is provided "AS IS" without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, non‑infringement, or accuracy.
+
+10. Limitation of Liability
+10.1 To the maximum extent permitted by law, in no event shall the copyright holder be liable for any indirect, incidental, consequential, special, exemplary, or punitive damages.
+10.2 The aggregate liability for direct damages shall not exceed the fees, if any, actually paid for the authorized use of the Software in the twelve months preceding the claim.
+
+11. Indemnification
+11.1 The Licensee agrees to indemnify and hold harmless the copyright holder from claims arising out of the Licensee’s unauthorized use, distribution, or modification of the Software.
+
+12. Compliance and Export Controls
+12.1 The Licensee must comply with all applicable laws, including data protection and export control regulations.
+
+13. Third‑Party Components
+13.1 The Software may include third‑party components under their respective licenses. Such components are governed by their own license terms, which shall prevail in case of conflict.
+
+14. Updates and Changes
+14.1 The copyright holder may add, modify, or remove features at any time. Continued use after updates constitutes acceptance of the updated terms, where applicable.
+
+15. Support
+15.1 No support, maintenance, or updates are guaranteed unless agreed in writing.
+
+16. Audit Rights
+16.1 The copyright holder may reasonably request evidence of compliance with this License.
+
+17. Assignment
+17.1 The Licensee may not assign or transfer rights without prior written consent.
+
+18. Governing Law and Jurisdiction
+18.1 This License shall be governed by the laws of Hungary.
+18.2 Exclusive jurisdiction and venue shall lie with the competent courts in Budapest, Hungary.
+
+19. Severability
+19.1 If any provision is held invalid, the remaining provisions shall remain in full force and effect.
+
+20. Entire Agreement
+20.1 This License constitutes the entire agreement regarding the Software unless superseded by a signed written agreement.
+
+21. Notices
+21.1 Licensing inquiries and notices: info@vizitor.hu
+
+22. Acceptance
+22.1 By accessing, installing, copying, or using any part of the Software, the Licensee acknowledges having read, understood, and agreed to this License.
+
+License Type: Proprietary — Vizitor Proprietary License (VPL) v1.0
