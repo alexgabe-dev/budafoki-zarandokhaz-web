@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/hirek/page": "app/admin/hirek/page.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/api/admin/logout/route": "app/api/admin/logout/route.js",
+  "/api/news/[id]/route": "app/api/news/[id]/route.js",
+  "/api/news/route": "app/api/news/route.js",
+  "/galeria/page": "app/galeria/page.js",
+  "/hirek/[slug]/page": "app/hirek/[slug]/page.js",
+  "/hirek/page": "app/hirek/page.js",
+  "/kapcsolat/page": "app/kapcsolat/page.js",
+  "/page": "app/page.js",
+  "/rendezvenyek/page": "app/rendezvenyek/page.js",
+  "/rolunk/page": "app/rolunk/page.js",
+  "/szallas/page": "app/szallas/page.js",
+  "/szolgaltatasok/page": "app/szolgaltatasok/page.js",
+  "/vendeglatas/page": "app/vendeglatas/page.js",
+  "/wellness/page": "app/wellness/page.js"
+}

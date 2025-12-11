@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Delego/Documents/git/budafoki-zarandokhaz-web/app/api/admin/login/route.ts"],"sourcesContent":["import { NextRequest, NextResponse } from \"next/server\"\n\nconst ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || \"secret\"\n\nexport async function POST(req: NextRequest) {\n  const { password } = await req.json()\n  if (String(password) !== ADMIN_PASSWORD) {\n    return new NextResponse(\"Unauthorized\", { status: 401 })\n  }\n  const res = NextResponse.json({ ok: true })\n  res.cookies.set(\"admin\", \"1\", {\n    httpOnly: true,\n    sameSite: \"lax\",\n    secure: process.env.NODE_ENV === \"production\",\n    path: \"/\",\n    maxAge: 60 * 60 * 8, // 8 óra\n  })\n  return res\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEA,MAAM,iBAAiB,QAAQ,GAAG,CAAC,cAAc,IAAI;AAE9C,eAAe,KAAK,GAAgB;IACzC,MAAM,EAAE,QAAQ,EAAE,GAAG,MAAM,IAAI,IAAI;IACnC,IAAI,OAAO,cAAc,gBAAgB;QACvC,OAAO,IAAI,sMAAY,CAAC,gBAAgB;YAAE,QAAQ;QAAI;IACxD;IACA,MAAM,MAAM,sMAAY,CAAC,IAAI,CAAC;QAAE,IAAI;IAAK;IACzC,IAAI,OAAO,CAAC,GAAG,CAAC,SAAS,KAAK;QAC5B,UAAU;QACV,UAAU;QACV,QAAQ,oDAAyB;QACjC,MAAM;QACN,QAAQ,KAAK,KAAK;IACpB;IACA,OAAO;AACT"}}]
+}

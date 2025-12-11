@@ -1,0 +1,139 @@
+export interface NewsArticle {
+  id: number
+  slug: string
+  title: string
+  excerpt: string
+  content: string
+  date: string
+  readTime: string
+  image: string
+  category: string
+  featured?: boolean
+  author: string
+  authorImage: string
+}
+
+export const allNews: NewsArticle[] = [
+  {
+    id: 1,
+    slug: "advent-a-zarandokhazban",
+    title: "Advent a Zarándokházban",
+    excerpt: "December minden hétvégéjén különleges adventi estek forralt borral és élő zenével. Csatlakozz hozzánk a várakozás idején!",
+    content: "<p>Az advent a várakozás és az elcsendesedés időszaka, és mi a Zarándokházban különleges módon szeretnénk megünnepelni ezt az időszakot veletek.</p>\n      \n      <h2>Adventi Estek Programja</h2>\n      \n      <p>December minden hétvégéjén, péntektől vasárnapig, különleges adventi esteket szervezünk. A program minden este 18:00-kor kezdődik és éjfélig tart.</p>\n      \n      <p>A hangulatos gyertyafényes estéken házi készítésű forralt borral és punccsal várunk benneteket. Konyhánk különleges adventi finomságokat készít: mézeskalács, fahéjas alma pite és más téli csemegék kerülnek az asztalra.</p>\n      \n      <h2>Élő Zene</h2>\n      \n      <p>Minden szombat este élő zenével fokozzuk a hangulatot. Helyi művészek jazz és akusztikus feldolgozásokban adják elő a legszebb adventi dalokat, de nem maradnak el a klasszikus magyar népdalok sem.</p>\n      \n      <blockquote>\"Az advent a Zarándokházban nem csak egy esemény, hanem egy közösségi élmény, ahol barátok és idegenek találkoznak a meleg fényben.\"</blockquote>\n      \n      <h2>Foglalás és Információk</h2>\n      \n      <p>Az adventi estékre nem szükséges előzetes foglalás, de a szállás foglalásához kérjük, vegyétek fel velünk a kapcsolatot. A teljes adventi időszakban 10% kedvezményt biztosítunk a szobafoglalásokra.</p>\n      \n      <p>Várunk szeretettel minden zarándokot, aki a karácsony előtti hetekben egy kis békességre vágyik!</p>",
+    date: "2025. december 1.",
+    readTime: "4 perc",
+    image: "/cozy-advent-candles-wine-bar-dark-atmosphere-chris.jpg",
+    category: "Esemény",
+    author: "Kovács Márton",
+    authorImage: "/friendly-hungarian-man-portrait.jpg",
+  },
+  {
+    id: 2,
+    slug: "uj-teli-menunk-erkezett",
+    title: "Új téli menünk érkezett",
+    excerpt: "Meleg levesek, laktató főételek és bűnös desszertek – konyhánk téli kínálata megérkezett.",
+    content: "\n\n      <p>A hideg idő beköszöntével konyhánk séfje, Tóth Bence, elkészítette az idei téli menüt, amely a hagyományos magyar ízeket modern köntösben tálalva kínálja.</p>\n      \n      <h2>Előételek és Levesek</h2>\n      \n      <p>A hideg estéken nincs is jobb, mint egy forró leves. Kínálatunkban megtalálható a klasszikus gulyásleves, a füstölt csülkös bableves és az újdonságunk, a sütőtök krémleves pirított tökmaggal.</p>\n      \n      <h2>Főételek</h2>\n      \n      <p>A főételek között szerepel a lassú tűzön főtt marhapörkölt házi nokedlivel, a ropogós kacsacomb párolt káposztával és a vegetáriánus töltött paprika.</p>\n      \n      <blockquote>\"A téli menü minden fogása a magyar konyha tiszteletére készült, de nem félünk újítani sem.\" - Tóth Bence, séf</blockquote>\n      \n      <h2>Desszertek</h2>\n      \n      <p>Desszertjeink között megtalálható a klasszikus somlói galuska, a meleg almás pite vaníliasodóval és az új kedvencünk, a sós karamellás palacsinta.</p>\n      \n      <p>A téli menü december 1-től március végéig érhető el. Asztalfoglaláshoz hívjatok minket vagy használjátok online foglalási rendszerünket!</p>\n    \n    ",
+    date: "2025. november 28.",
+    readTime: "3 perc",
+    image: "/hungarian-winter-food-soup-hearty-meal-dark-restau.jpg",
+    category: "Gasztronómia",
+    author: "Nagy Eszter",
+    authorImage: "/friendly-hungarian-woman-portrait-chef.jpg",
+  },
+  {
+    id: 3,
+    slug: "szilveszteri-vigilia",
+    title: "Szilveszteri Vigília",
+    excerpt: "Az év utolsó éjszakáját töltsd nálunk! Élő zene, tombola és éjféli pezsgő várja a zarándokokat.",
+    content: "\n\n      <p>Búcsúztassuk együtt az óévet és köszöntsük az újat a Zarándokház különleges szilveszteri mulatságán!</p>\n      \n      <h2>Program</h2>\n      \n      <p>Az este 19:00-kor kezdődik üdvözlő koktéllal és könnyű harapnivalókkal. 20:00-tól ünnepi vacsora következik, majd 22:00-tól élő zene és tánc.</p>\n      \n      <h2>Tombola és Meglepetések</h2>\n      \n      <p>Éjfél előtt nagy tombolát tartunk, melynek főnyereménye egy hétvégi wellness csomag két főre! De lesz sok más nyeremény is: borok, ajándékkosarak és éttermi utalványok.</p>\n      \n      <h2>Éjféli Pezsgő</h2>\n      \n      <p>Éjfélkor pezsgővel koccintunk az új évre, közös visszaszámlálással és tűzijátékkal a teraszon (időjárás függvényében).</p>\n      \n      <p>A szilveszteri est ára: 35.000 Ft/fő, amely tartalmazza a vacsorát, a korlátlan italfogyasztást és a tombolajegyet. Szállásfoglalással kombinálva 10% kedvezmény!</p>\n      \n      <p>Helyek száma korlátozott, foglalj időben!</p>\n    \n    ",
+    date: "2025. november 25.",
+    readTime: "3 perc",
+    image: "/new-years-eve-party-champagne-celebration-dark-ele.jpg",
+    category: "Esemény",
+    author: "Kovács Márton",
+    authorImage: "/friendly-hungarian-man-portrait.jpg",
+  },
+  {
+    id: 4,
+    slug: "pincetura-a-borvideken",
+    title: "Pincetúra a borvidéken",
+    excerpt: "Csatlakozz exkluzív pincetúránkhoz! Fedezd fel a Budafoki borvidék rejtett kincseit szakértő vezetéssel.",
+    content: "\n\n      <p>A Budafoki borvidék Magyarország egyik legrégebbi és legjelentősebb bortermelő területe. Most lehetőséged nyílik felfedezni a föld alatti pincerendszert és megkóstolni a régió legjobb borait.</p>\n      \n      <h2>A Túra Programja</h2>\n      \n      <p>A pincetúra minden hónap első szombatján indul a Zarándokháztól 14:00-kor. A mintegy 3 órás program során 3 pincét látogatunk meg, mindegyikben 3-4 bort kóstolunk.</p>\n      \n      <h2>Mit Láthatsz?</h2>\n      \n      <p>A Budafoki pincerendszer évszázados története során több mint 100 kilométernyi járatot vágtak a mészkőbe. Némelyik pince a török időkből származik! A túra során betekintést nyersz a hagyományos borászati módszerekbe és a modern technológiákba egyaránt.</p>\n      \n      <blockquote>\"A budafoki pincék nem csak a borok otthona, hanem Budapest rejtett kincsei is.\" - Szabó János, borszakértő</blockquote>\n      \n      <h2>Részvételi Díj</h2>\n      \n      <p>A túra ára 12.000 Ft/fő, amely tartalmazza a vezetést, a borkóstolót (10-12 bor) és egy kis hideg tálat. A Zarándokház vendégeinek 15% kedvezmény!</p>\n      \n      <p>Jelentkezés a recepción vagy online. Minimum létszám: 6 fő, maximum: 15 fő.</p>\n    \n    ",
+    date: "2025. november 20.",
+    readTime: "4 perc",
+    image: "/wine-cellar-tour-barrels-candlelight-dark-moody.jpg",
+    category: "Kirándulás",
+    author: "Szabó János",
+    authorImage: "/hungarian-wine-expert-man-portrait.jpg",
+  },
+  {
+    id: 5,
+    slug: "uj-kiallitas-a-galeriaban",
+    title: "Új kiállítás a galériában",
+    excerpt: "Kovács Anna 'Fények és Árnyékok' című kiállítása december elsejétől látható galériánkban.",
+    content: "\n\n      <p>Örömmel jelentjük be, hogy december 1-jétől új kiállítás nyílik galériánkban! Kovács Anna fiatal magyar festőművész \"Fények és Árnyékok\" című tárlata január végéig tekinthető meg.</p>\n      \n      <h2>A Kiállításról</h2>\n      \n      <p>Kovács Anna munkái a fény és árnyék játékát vizsgálják különböző városi és természeti környezetben. Olajfestményei és akvarelljei egyaránt megtalálhatók a kiállításon, összesen 24 alkotás.</p>\n      \n      <h2>A Művészről</h2>\n      \n      <p>Kovács Anna 1992-ben született Budapesten. A Magyar Képzőművészeti Egyetemen végzett 2016-ban. Azóta számos hazai és nemzetközi kiállításon szerepelt munkáival. Ez az első önálló tárlata a Zarándokházban.</p>\n      \n      <blockquote>\"A fény és árnyék számomra az élet metaforája – a kettő egymás nélkül nem létezhet, és együtt teremtik meg a harmóniát.\" - Kovács Anna</blockquote>\n      \n      <h2>Megnyitó</h2>\n      \n      <p>A kiállítás ünnepélyes megnyitója december 1-jén, szombaton 17:00-kor lesz. A megnyitón a művész személyesen is jelen lesz, és rövid tárlatvezetést tart. A megnyitó után borkóstolóval és könnyű vacsorával várjuk a vendégeket.</p>\n      \n      <p>A kiállítás megtekintése ingyenes, a megnyitó eseményre regisztráció szükséges.</p>\n    \n    ",
+    date: "2025. november 15.",
+    readTime: "3 perc",
+    image: "/art-gallery-opening-exhibition-paintings-dark-eleg.jpg",
+    category: "Kultúra",
+    author: "Fekete Adrienn",
+    authorImage: "/hungarian-art-curator-woman-portrait.jpg",
+  },
+  {
+    id: 6,
+    slug: "borkostoloi-tanfolyam-indul",
+    title: "Borkóstolói tanfolyam indul",
+    excerpt: "Januárban elindul 6 részes borkóstolói tanfolyamunk kezdők és haladók számára egyaránt.",
+    content: "\n\n      <p>Szeretnéd jobban megérteni a borok világát? Januártól 6 részes borkóstolói tanfolyamot indítunk, ahol az alapoktól a haladó technikákig mindent megtudhatsz!</p>\n      \n      <h2>A Tanfolyam Felépítése</h2>\n      \n      <p>A tanfolyam 6 alkalomból áll, minden csütörtökön 18:00-20:30 között. Az első három alkalom a kezdőknek szól, a második három a haladóknak – de természetesen mindenkit várunk a teljes sorozatra!</p>\n      \n      <h2>Tematika</h2>\n      \n      <p><strong>1. alkalom:</strong> A borkóstolás alapjai, a szőlőfajták<br/>\n      <strong>2. alkalom:</strong> Magyar borvidékek fehérborai<br/>\n      <strong>3. alkalom:</strong> Magyar borvidékek vörösborai<br/>\n      <strong>4. alkalom:</strong> Nemzetközi borok, összehasonlítás<br/>\n      <strong>5. alkalom:</strong> Étel-bor párosítás<br/>\n      <strong>6. alkalom:</strong> Vizsga és záró borkóstoló</p>\n      \n      <h2>Árak és Jelentkezés</h2>\n      \n      <p>A teljes tanfolyam ára: 85.000 Ft/fő (6 alkalom, alkalmanként 6-8 bor kóstolása, jegyzet). Egyéni alkalmak: 16.000 Ft/fő. A Zarándokház vendégeinek 10% kedvezmény!</p>\n      \n      <p>Jelentkezési határidő: december 20. Minimum létszám: 8 fő, maximum: 16 fő.</p>\n    \n    ",
+    date: "2025. november 10.",
+    readTime: "3 perc",
+    image: "/wine-tasting-class-sommelier-dark-bar-elegant.jpg",
+    category: "Tanfolyam",
+    author: "Szabó János",
+    authorImage: "/hungarian-wine-expert-man-portrait.jpg",
+  },
+  {
+    id: 7,
+    slug: "wellness-hetvege-akcio",
+    title: "Wellness hétvége akció",
+    excerpt: "December első hétvégéjén 20% kedvezmény a wellness szolgáltatásainkra! Foglalj most!",
+    content: "\n\n      <p>December első hétvégéjén (december 6-8.) különleges wellness akcióval várunk! Minden wellness szolgáltatásunkra 20% kedvezményt biztosítunk.</p>\n      \n      <h2>Elérhető Szolgáltatások</h2>\n      \n      <p>A kedvezmény vonatkozik a szaunára, a gőzfürdőre, a masszázsokra és a pipatórium használatára is. A kedvezmény szállásfoglalás nélkül is igénybe vehető!</p>\n      \n      <h2>Masszázs Menü</h2>\n      \n      <p><strong>Relaxáló masszázs (60 perc):</strong> 12.000 Ft helyett 9.600 Ft<br/>\n      <strong>Aromaterápiás masszázs (75 perc):</strong> 15.000 Ft helyett 12.000 Ft<br/>\n      <strong>Páros masszázs (60 perc):</strong> 22.000 Ft helyett 17.600 Ft</p>\n      \n      <h2>Wellness Belépő</h2>\n      \n      <p>A wellness részleg belépő ára 6.000 Ft helyett 4.800 Ft, amely tartalmazza a szauna, gőzfürdő és pihenő használatát 3 órán keresztül.</p>\n      \n      <p>Az akció nem kombinálható más kedvezményekkel. Előzetes foglalás szükséges!</p>\n    \n    ",
+    date: "2025. november 5.",
+    readTime: "2 perc",
+    image: "/spa-wellness-sauna-relaxation-dark-moody.jpg",
+    category: "Akció",
+    author: "Kiss Virág",
+    authorImage: "/hungarian-wellness-therapist-woman-portrait.jpg",
+  },
+  {
+    id: 8,
+    slug: "csapatepito-programok-cegeknek",
+    title: "Csapatépítő programok cégeknek",
+    excerpt: "Egyedi csapatépítő programokat kínálunk cégek számára – borkóstoló, főzőtanfolyam és wellness.",
+    content: "\n\n      <p>A Zarándokház nem csak magánszemélyeknek, hanem cégeknek is ideális helyszín! Egyedi csapatépítő programjainkat igényeitek szerint állítjuk össze.</p>\n      \n      <h2>Programjaink</h2>\n      \n      <p><strong>Borkóstoló verseny:</strong> Csapatok versengenek a borok felismerésében és párosításában. Szórakoztató és tanulságos egyszerre!</p>\n      \n      <p><strong>Főzőtanfolyam:</strong> Csapatokban főztök tradicionális magyar ételeket séfünk vezetésével. A végén közösen megkóstoljátok az alkotásokat!</p>\n      \n      <p><strong>Wellness & Wine:</strong> Relaxáló wellness program borkóstolóval kombinálva. Tökéletes év végi jutalom a csapatnak!</p>\n      \n      <h2>Helyszín</h2>\n      \n      <p>A programok a Zarándokház rendezvénytermében és éttermi részlegében zajlanak. Maximum 50 fő fogadására vagyunk felkészülve.</p>\n      \n      <h2>Árajánlat</h2>\n      \n      <p>Az árak a létszámtól és a választott programtól függenek. Kérjetek egyedi ajánlatot a sales@zarandokhaz.hu címen vagy hívjatok minket!</p>\n      \n      <p>Foglaljatok időben, különösen a karácsonyi időszakra!</p>\n    \n    ",
+    date: "2025. november 1.",
+    readTime: "4 perc",
+    image: "/corporate-team-building-event-wine-tasting-group.jpg",
+    category: "Üzleti",
+    author: "Kovács Márton",
+    authorImage: "/friendly-hungarian-man-portrait.jpg",
+  },
+]
+
+export function getNewsArticle(slug: string): NewsArticle | undefined {
+  return allNews.find((article) => article.slug === slug)
+}
+
+export function getRelatedArticles(currentSlug: string, limit = 3): NewsArticle[] {
+  const current = allNews.find((article) => article.slug === currentSlug)
+  if (!current) return allNews.slice(0, limit)
+
+  return allNews
+    .filter((article) => article.slug !== currentSlug)
+    .sort((a, b) => {
+      if (a.category === current.category && b.category !== current.category) return -1
+      if (b.category === current.category && a.category !== current.category) return 1
+      return 0
+    })
+    .slice(0, limit)
+}

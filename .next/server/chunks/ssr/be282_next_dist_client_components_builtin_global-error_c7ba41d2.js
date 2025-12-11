@@ -1,0 +1,3 @@
+module.exports=[36888,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(12728);a.n(d("[project]/Documents/git/budafoki-zarandokhaz-web/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},77935,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(12728);a.n(d("[project]/Documents/git/budafoki-zarandokhaz-web/node_modules/next/dist/client/components/builtin/global-error.js"))},30759,a=>{"use strict";a.i(36888);var b=a.i(77935);a.n(b)}];
+
+//# sourceMappingURL=be282_next_dist_client_components_builtin_global-error_c7ba41d2.js.map

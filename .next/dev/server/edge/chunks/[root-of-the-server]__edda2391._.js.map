@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/git/budafoki-zarandokhaz-web/middleware.ts"],"sourcesContent":["import { NextResponse } from \"next/server\"\nimport type { NextRequest } from \"next/server\"\n\nexport function middleware(req: NextRequest) {\n  const { pathname } = req.nextUrl\n\n  if (pathname.startsWith(\"/admin\") && pathname !== \"/admin/login\") {\n    const isAdmin = req.cookies.get(\"admin\")?.value === \"1\"\n    if (!isAdmin) {\n      const url = req.nextUrl.clone()\n      url.pathname = \"/admin/login\"\n      return NextResponse.redirect(url)\n    }\n  }\n\n  return NextResponse.next()\n}\n\nexport const config = {\n  matcher: [\"/admin/:path*\"],\n}\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAGO,SAAS,WAAW,GAAgB;IACzC,MAAM,EAAE,QAAQ,EAAE,GAAG,IAAI,OAAO;IAEhC,IAAI,SAAS,UAAU,CAAC,aAAa,aAAa,gBAAgB;QAChE,MAAM,UAAU,IAAI,OAAO,CAAC,GAAG,CAAC,UAAU,UAAU;QACpD,IAAI,CAAC,SAAS;YACZ,MAAM,MAAM,IAAI,OAAO,CAAC,KAAK;YAC7B,IAAI,QAAQ,GAAG;YACf,OAAO,sPAAY,CAAC,QAAQ,CAAC;QAC/B;IACF;IAEA,OAAO,sPAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAgB;AAC5B"}}]
+}
