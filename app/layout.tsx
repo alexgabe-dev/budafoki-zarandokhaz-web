@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   description:
     "Egy hely, ahol a hit és a ház bora közös misére gyűlnek. Vallásos tematikájú bár és zarándok-szálláshely Budafokon.",
   keywords: ["zarándokház", "budafok", "bár", "szálláshely", "étterem", "rendezvény", "wellness"],
+  icons: {
+    icon: "/logo/bfzh-logo-w.png",
+    shortcut: "/logo/bfzh-logo-w.png",
+    apple: "/logo/bfzh-logo-w.png",
+  },
   openGraph: {
     title: "Budafoki Zarándokház",
     description: "Ahol a hit és a ház bora közös misére gyűlnek.",
