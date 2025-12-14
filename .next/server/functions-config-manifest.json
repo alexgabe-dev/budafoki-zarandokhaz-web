@@ -2,11 +2,11 @@
   "version": 1,
   "functions": {
     "/api/artworks": {},
-    "/api/exhibitions": {},
     "/api/artworks/[id]": {},
-    "/api/news/[id]": {},
     "/api/exhibitions/[id]": {},
+    "/api/exhibitions": {},
     "/api/news": {},
+    "/api/news/[id]": {},
     "/_middleware": {
       "runtime": "nodejs",
       "matchers": [
