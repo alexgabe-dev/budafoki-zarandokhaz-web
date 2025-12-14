@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 
 const stats = [
   { icon: Calendar, value: "2022", label: "óta várjuk a zarándokokat" },
-  { icon: Users, value: "10,000+", label: "boldog vendég" },
+  { icon: Users, value: "10,000+", label: "boldog zarándok" },
   { icon: Wine, value: "50+", label: "válogatott bor" },
   { icon: Heart, value: "100%", label: "szeretettel készül" },
 ]
