@@ -8,10 +8,13 @@ export async function POST(req: NextRequest) {
     return new NextResponse("Unauthorized", { status: 401 })
   }
   const res = NextResponse.json({ ok: true })
+  const forwardedProto = req.headers.get("x-forwarded-proto")
+  const urlProto = (req.nextUrl?.protocol || "").replace(":", "")
+  const isHttps = (forwardedProto || urlProto) === "https"
   res.cookies.set("admin", "1", {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: isHttps,
     path: "/",
     maxAge: 60 * 60 * 8, // 8 óra
   })
